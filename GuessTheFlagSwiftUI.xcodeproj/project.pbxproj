@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED2A851C2D401600000DEA26 /* GameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A851B2D401600000DEA26 /* GameStats.swift */; };
+		ED2A851E2D4019B6000DEA26 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A851D2D4019B6000DEA26 /* StatsView.swift */; };
+		ED2A85202D4019C4000DEA26 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A851F2D4019C4000DEA26 /* StartView.swift */; };
 		ED855E6B2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED855E6A2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift */; };
 		ED855E6D2B3AF7A2008C8016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED855E6C2B3AF7A2008C8016 /* ContentView.swift */; };
 		ED855E6F2B3AF7A3008C8016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED855E6E2B3AF7A3008C8016 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED2A851B2D401600000DEA26 /* GameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStats.swift; sourceTree = "<group>"; };
+		ED2A851D2D4019B6000DEA26 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		ED2A851F2D4019C4000DEA26 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		ED855E672B3AF7A2008C8016 /* GuessTheFlagSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlagSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED855E6A2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagSwiftUIApp.swift; sourceTree = "<group>"; };
 		ED855E6C2B3AF7A2008C8016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED2A85172D4015DE000DEA26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A851D2D4019B6000DEA26 /* StatsView.swift */,
+				ED2A851F2D4019C4000DEA26 /* StartView.swift */,
+				ED855E6C2B3AF7A2008C8016 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED2A85182D4015E3000DEA26 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ED2A85192D4015E8000DEA26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ED2A851A2D4015F0000DEA26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A851B2D401600000DEA26 /* GameStats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ED855E5E2B3AF7A2008C8016 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +89,11 @@
 		ED855E692B3AF7A2008C8016 /* GuessTheFlagSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				ED2A851A2D4015F0000DEA26 /* Models */,
+				ED2A85192D4015E8000DEA26 /* Utils */,
+				ED2A85182D4015E3000DEA26 /* ViewModels */,
+				ED2A85172D4015DE000DEA26 /* Views */,
 				ED855E6A2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift */,
-				ED855E6C2B3AF7A2008C8016 /* ContentView.swift */,
 				ED855E6E2B3AF7A3008C8016 /* Assets.xcassets */,
 				ED855E702B3AF7A3008C8016 /* Preview Content */,
 			);
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2A851E2D4019B6000DEA26 /* StatsView.swift in Sources */,
+				ED2A85202D4019C4000DEA26 /* StartView.swift in Sources */,
 				ED855E6D2B3AF7A2008C8016 /* ContentView.swift in Sources */,
 				ED855E6B2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift in Sources */,
+				ED2A851C2D401600000DEA26 /* GameStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
