@@ -9,10 +9,15 @@ import SwiftUI
 
 @main
 struct GuessTheFlagSwiftUIApp: App {
+    @StateObject private var appViewModel = AppViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .modelContainer(for: GameStats.self)
+            NavigationStack(path: $appViewModel.path) {
+                StartView()
+                    .configureNavigationDestinations()
+            }
+            .environmentObject(appViewModel)
         }
     }
 }

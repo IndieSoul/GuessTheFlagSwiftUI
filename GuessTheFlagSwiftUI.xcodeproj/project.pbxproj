@@ -10,8 +10,13 @@
 		ED2A851C2D401600000DEA26 /* GameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A851B2D401600000DEA26 /* GameStats.swift */; };
 		ED2A851E2D4019B6000DEA26 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A851D2D4019B6000DEA26 /* StatsView.swift */; };
 		ED2A85202D4019C4000DEA26 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A851F2D4019C4000DEA26 /* StartView.swift */; };
+		ED53734E2D4021EC00E59188 /* NavigationDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED53734D2D4021EC00E59188 /* NavigationDestinations.swift */; };
+		ED5373502D40228200E59188 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED53734F2D40228100E59188 /* AppViewModel.swift */; };
+		ED5373522D4023AD00E59188 /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5373512D4023AD00E59188 /* RecordsView.swift */; };
+		ED5373542D40253000E59188 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5373532D40253000E59188 /* GameViewModel.swift */; };
+		ED5F73392D40B8CC0051AB3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5F73382D40B8CC0051AB3D /* LaunchScreen.storyboard */; };
 		ED855E6B2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED855E6A2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift */; };
-		ED855E6D2B3AF7A2008C8016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED855E6C2B3AF7A2008C8016 /* ContentView.swift */; };
+		ED855E6D2B3AF7A2008C8016 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED855E6C2B3AF7A2008C8016 /* GameView.swift */; };
 		ED855E6F2B3AF7A3008C8016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED855E6E2B3AF7A3008C8016 /* Assets.xcassets */; };
 		ED855E722B3AF7A3008C8016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED855E712B3AF7A3008C8016 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -20,9 +25,14 @@
 		ED2A851B2D401600000DEA26 /* GameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStats.swift; sourceTree = "<group>"; };
 		ED2A851D2D4019B6000DEA26 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		ED2A851F2D4019C4000DEA26 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		ED53734D2D4021EC00E59188 /* NavigationDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinations.swift; sourceTree = "<group>"; };
+		ED53734F2D40228100E59188 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		ED5373512D4023AD00E59188 /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
+		ED5373532D40253000E59188 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		ED5F73382D40B8CC0051AB3D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED855E672B3AF7A2008C8016 /* GuessTheFlagSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlagSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED855E6A2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagSwiftUIApp.swift; sourceTree = "<group>"; };
-		ED855E6C2B3AF7A2008C8016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED855E6C2B3AF7A2008C8016 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		ED855E6E2B3AF7A3008C8016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED855E712B3AF7A3008C8016 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,7 +53,8 @@
 			children = (
 				ED2A851D2D4019B6000DEA26 /* StatsView.swift */,
 				ED2A851F2D4019C4000DEA26 /* StartView.swift */,
-				ED855E6C2B3AF7A2008C8016 /* ContentView.swift */,
+				ED855E6C2B3AF7A2008C8016 /* GameView.swift */,
+				ED5373512D4023AD00E59188 /* RecordsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -51,6 +62,8 @@
 		ED2A85182D4015E3000DEA26 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				ED53734F2D40228100E59188 /* AppViewModel.swift */,
+				ED5373532D40253000E59188 /* GameViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -58,6 +71,7 @@
 		ED2A85192D4015E8000DEA26 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				ED53734D2D4021EC00E59188 /* NavigationDestinations.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -96,6 +110,7 @@
 				ED855E6A2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift */,
 				ED855E6E2B3AF7A3008C8016 /* Assets.xcassets */,
 				ED855E702B3AF7A3008C8016 /* Preview Content */,
+				ED5F73382D40B8CC0051AB3D /* LaunchScreen.storyboard */,
 			);
 			path = GuessTheFlagSwiftUI;
 			sourceTree = "<group>";
@@ -166,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5F73392D40B8CC0051AB3D /* LaunchScreen.storyboard in Resources */,
 				ED855E722B3AF7A3008C8016 /* Preview Assets.xcassets in Resources */,
 				ED855E6F2B3AF7A3008C8016 /* Assets.xcassets in Resources */,
 			);
@@ -178,9 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5373542D40253000E59188 /* GameViewModel.swift in Sources */,
+				ED53734E2D4021EC00E59188 /* NavigationDestinations.swift in Sources */,
+				ED5373522D4023AD00E59188 /* RecordsView.swift in Sources */,
 				ED2A851E2D4019B6000DEA26 /* StatsView.swift in Sources */,
+				ED5373502D40228200E59188 /* AppViewModel.swift in Sources */,
 				ED2A85202D4019C4000DEA26 /* StartView.swift in Sources */,
-				ED855E6D2B3AF7A2008C8016 /* ContentView.swift in Sources */,
+				ED855E6D2B3AF7A2008C8016 /* GameView.swift in Sources */,
 				ED855E6B2B3AF7A2008C8016 /* GuessTheFlagSwiftUIApp.swift in Sources */,
 				ED2A851C2D401600000DEA26 /* GameStats.swift in Sources */,
 			);
@@ -322,6 +342,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -351,6 +372,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

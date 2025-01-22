@@ -1,5 +1,12 @@
 //
-//  StatsView.swift
+//  RecordsView.swift
+//  GuessTheFlagSwiftUI
+//
+//  Created by Luis Enrique Rosas Espinoza on 21/01/25.
+//
+
+//
+//  RecordsView.swift
 //  GuessTheFlagSwiftUI
 //
 //  Created by Luis Enrique Rosas Espinoza on 21/01/25.
@@ -7,7 +14,7 @@
 
 import SwiftUI
 
-struct StatsView: View {
+struct RecordsView: View {
     @EnvironmentObject var appViewModel: AppViewModel
     
     var body: some View {
@@ -15,19 +22,11 @@ struct StatsView: View {
             RadialGradient(gradient: Gradient(colors: [.red, .gray]), center: .center, startRadius: 5, endRadius: 500)
                 .edgesIgnoringSafeArea(.all)
             
-            VStack() {
-                
+            VStack(spacing: 20) {
                 Spacer()
-                
-                
-                Text("Your Statistics")
+                Text("Records")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(.white)
-                
-                
-                Text("Total Score: \(appViewModel.score)")
-                    .font(.title2)
                     .foregroundColor(.white)
                 
                 Text("Best Score: \(appViewModel.bestScore)")
@@ -35,7 +34,6 @@ struct StatsView: View {
                     .foregroundColor(.white)
                 
                 Spacer()
-                
                 
                 Button("Back to Start") {
                     appViewModel.resetNavigation()
@@ -46,13 +44,10 @@ struct StatsView: View {
             }
             .padding()
         }
-        .onAppear {
-            appViewModel.updateBestScore() // Actualiza el mejor puntaje
-        }
     }
 }
 
 #Preview {
-    StatsView()
+    RecordsView()
         .environmentObject(AppViewModel())
 }
